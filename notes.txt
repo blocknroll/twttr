@@ -3,3 +3,6 @@
 8.2.2
 why do we need to explicitly put the users id in the session?
   in the sessions_helper?
+
+listing 8.18
+wtf?
