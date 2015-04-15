@@ -6,3 +6,11 @@ why do we need to explicitly put the users id in the session?
 
 listing 8.18
 wtf?
+
+listing 8.19
+do we need to make a fixture in users.yml?
+can't we just make one in def setup in the test file?
+
+listing 8.22
+helper methods aren't available in tests,
+  so we can't use current_user
