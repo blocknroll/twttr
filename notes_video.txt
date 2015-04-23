@@ -1,0 +1,39 @@
+
+
+
+///////////////////////////////////////////
+8
+
+0:32:30
+current_user
+  memoization
+  ||=
+
+current_user helper method
+  find current user in the db
+  change site layout based on the type of user
+
+
+0:56:00
+logged_in?  vs  is_logged_in?
+  cant use sessions_helper in test
+    tests differ from app in certain subtle ways
+
+
+
+
+1:04:00
+REMEMBER ME
+
+1:05:00
+  why do we have to write our own authentication comparison method?
+
+
+1:28:00
+  sessions_helper
+  if (user_id = session[:user_id])
+    idiomatic, but confusing = crap
+
+
+1:48:00
+  writing this test is pretty tricky

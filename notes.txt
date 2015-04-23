@@ -1,0 +1,35 @@
+
+-------------------------------
+8.2.2
+why do we need to explicitly put the users id in the session?
+  in the sessions_helper?
+
+listing 8.18
+wtf?
+
+listing 8.19
+do we need to make a fixture in users.yml?
+can't we just make one in def setup in the test file?
+
+listing 8.22
+helper methods aren't available in tests,
+  so we can't use current_user
+
+listing 8.31
+remember token and digest = not very clear
+
+
+listing 8.4.2
+??? In the present design, an attacker with both cookies can log in as the user only until the user logs out.)
+
+
+listing 8.50
+  There’s one more subtlety, which is that for some reason inside tests
+  the cookies method doesn’t work with symbols as keys,
+  so that this is always nil...
+
+      cookies[:remember_token]
+
+  Luckily, cookies does work with string keys, so that this works...
+
+      cookies['remember_token']
