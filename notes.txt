@@ -33,3 +33,16 @@ listing 8.50
   Luckily, cookies does work with string keys, so that this works...
 
       cookies['remember_token']
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////
+CHAPTER 9
+
+integration tests == acceptance tests
+  once the test passes, the feature is accepted as complete
