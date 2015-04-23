@@ -21,3 +21,15 @@ remember token and digest = not very clear
 
 listing 8.4.2
 ??? In the present design, an attacker with both cookies can log in as the user only until the user logs out.)
+
+
+listing 8.50
+  There’s one more subtlety, which is that for some reason inside tests
+  the cookies method doesn’t work with symbols as keys,
+  so that this is always nil...
+
+      cookies[:remember_token]
+
+  Luckily, cookies does work with string keys, so that this works...
+
+      cookies['remember_token']
