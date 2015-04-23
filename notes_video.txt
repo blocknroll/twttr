@@ -53,6 +53,7 @@ REMEMBER ME
 
 0:12:25
 strong parameters?
+  (see 7.3.2 Strong parameters)
 
   example:
     def user_params
