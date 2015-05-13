@@ -46,3 +46,16 @@ CHAPTER 9
 
 integration tests == acceptance tests
   once the test passes, the feature is accepted as complete
+
+
+AUTHORIZATION
+
+before filters:
+  To implement the forwarding behavior shown in Figure 9.6,
+  we’ll use a before filter in the Users controller.
+
+  Before filters use the before_action command to arrange
+  for a particular method to be called before the given actions.
+
+  To require users to be logged in, we define a logged_in_user method
+  and invoke it using before_action :logged_in_user
