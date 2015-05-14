@@ -37,3 +37,41 @@ REMEMBER ME
 
 1:48:00
   writing this test is pretty tricky
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////////
+9
+
+0:12:25
+strong parameters?
+  (see 7.3.2 Strong parameters)
+
+  example:
+    def user_params
+      params.require(:user).permit(:name, :email, :password,
+                                   :password_confirmation)
+    end
+
+
+0:40:50
+specify urls differently in integration tests vs controller tests
+
+
+0:59:30
+users index
+
+
+1:30:00
+users destroy
+
+1:47:00
+why not just add a new test and keep the original, as is?

@@ -33,3 +33,42 @@ listing 8.50
   Luckily, cookies does work with string keys, so that this works...
 
       cookies['remember_token']
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////
+CHAPTER 9
+
+integration tests == acceptance tests
+  once the test passes, the feature is accepted as complete
+
+
+AUTHORIZATION
+
+before filters:
+  To implement the forwarding behavior shown in Figure 9.6,
+  we’ll use a before filter in the Users controller.
+
+  Before filters use the before_action command to arrange
+  for a particular method to be called before the given actions.
+
+  To require users to be logged in, we define a logged_in_user method
+  and invoke it using before_action :logged_in_user
+
+
+
+FRIENDLY FORWARDING
+  The store_location method in Listing 9.27 puts the requested URL
+  in the session variable under the key :forwarding_url,
+  but only for a GET request.
+
+
+before filters:
+  we’ll enforce access control using a before filter,
+  this time to restrict access to the destroy action to admins.
+  The resulting admin_user before filter appears in Listing 9.54.
