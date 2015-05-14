@@ -72,3 +72,24 @@ before filters:
   we’ll enforce access control using a before filter,
   this time to restrict access to the destroy action to admins.
   The resulting admin_user before filter appears in Listing 9.54.
+
+
+
+
+
+//////////////////////////////////////////////////////////////////
+CHAPTER 10
+Account activation & Password reset
+
+
+Account activation:
+1. Start users in an “unactivated” state.
+2. When a user signs up, generate an activation token
+    and corresponding activation digest.
+3. Save the activation digest to the database,
+    and then send an email to the user with a link
+    containing the activation token and user’s email address.
+4. When the user clicks the link, find the user by email address,
+    and then authenticate the token by comparing with the activation digest.
+5. If the user is authenticated, change the status from “unactivated”
+    to “activated”.
