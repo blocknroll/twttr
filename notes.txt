@@ -66,3 +66,9 @@ FRIENDLY FORWARDING
   The store_location method in Listing 9.27 puts the requested URL
   in the session variable under the key :forwarding_url,
   but only for a GET request.
+
+
+before filters:
+  we’ll enforce access control using a before filter,
+  this time to restrict access to the destroy action to admins.
+  The resulting admin_user before filter appears in Listing 9.54.
