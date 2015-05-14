@@ -59,3 +59,10 @@ before filters:
 
   To require users to be logged in, we define a logged_in_user method
   and invoke it using before_action :logged_in_user
+
+
+
+FRIENDLY FORWARDING
+  The store_location method in Listing 9.27 puts the requested URL
+  in the session variable under the key :forwarding_url,
+  but only for a GET request.
