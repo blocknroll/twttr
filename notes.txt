@@ -93,3 +93,12 @@ Account activation:
     and then authenticate the token by comparing with the activation digest.
 5. If the user is authenticated, change the status from “unactivated”
     to “activated”.
+
+
+
+Activation token:
+edit_user_url(user)    # produces a URL of the form:
+http://www.example.com/users/1/edit
+
+edit_account_activation_url(@user.activation_token, ...)   # produces a URL of the form:
+http://www.example.com/account_activations/q5lt38hQDc_959PVoo6b7A/edit
