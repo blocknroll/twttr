@@ -102,3 +102,13 @@ http://www.example.com/users/1/edit
 
 edit_account_activation_url(@user.activation_token, ...)   # produces a URL of the form:
 http://www.example.com/account_activations/q5lt38hQDc_959PVoo6b7A/edit
+
+
+
+Assigns
+  user = assigns(:user)
+  
+  assigns lets us access instance variables in the corresponding action.
+    For example, the Users controller’s create action
+    defines an @user variable (Listing 10.21),
+    so we can access it in the test using assigns(:user).
